@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'http://localhost:5000/tasks'
+    apiUrl: 'https://github.com/el-yonousi/angular-demo-app-01/blob/master/db.json'
 };

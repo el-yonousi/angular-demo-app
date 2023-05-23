@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Task } from '../Task';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -15,7 +14,7 @@ const httpOptions = {
 })
 export class TaskService {
 
-  private apiUrl = environment.apiUrl
+  private apiUrl = 'https://my-json-server.typicode.com/el-yonousi/angular-demo-app-01/tasks'
 
   constructor(private http: HttpClient) { }
 
