@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html {
+    color-scheme: dark;
+    @apply bg-slate-900 text-slate-300;
+}
