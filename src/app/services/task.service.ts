@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class TaskService {
 
-  private apiUrl = 'https://json-server-blond-ten.vercel.app/tasks'
+  private apiUrl = 'https://json-server-fqc1.onrender.com/tasks'
 
   constructor(private http: HttpClient) { }
 
