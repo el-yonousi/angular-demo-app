@@ -14,7 +14,7 @@ const httpOptions = {
 })
 export class TaskService {
 
-  private apiUrl = 'https://json-server-px492ogw8-el-yonousi.vercel.app/tasks'
+  private apiUrl = 'https://json-server-blond-ten.vercel.app/tasks'
 
   constructor(private http: HttpClient) { }
 
