@@ -1,4 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://github.com/el-yonousi/angular-demo-app-01/blob/master/db.json'
+    apiUrl: 'https://my-json-server.typicode.com/el-yonousi/angular-demo-app-01/db'
+    // apiUrl: 'https://my-json-server.typicode.com/el-yonousi/angular-demo-app-01/tasks'
 };
