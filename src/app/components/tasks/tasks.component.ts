@@ -17,7 +17,7 @@ export class TasksComponent {
       this.tasks = tasks
       this.tasks.sort((a, b) => {
         const dateA = new Date(a.day);
-        const dateB = new Date(b.day);        
+        const dateB = new Date(b.day);
         return dateB.getTime() - dateA.getTime();
       });
     })

@@ -1,6 +1,7 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { Task } from 'src/app/Task';
-
+import { UiService } from 'src/app/services/ui.service';
 @Component({
   selector: 'app-add-task',
   templateUrl: './add-task.component.html',
@@ -14,10 +15,10 @@ export class AddTaskComponent {
     day: string,
     reminder: boolean
   } = {
-    text: '',
-    day: '',
-    reminder: false
-  }
+      text: '',
+      day: new Date().toString(),
+      reminder: false
+    }
 
   errors: {
     text: string;
@@ -26,6 +27,14 @@ export class AddTaskComponent {
       text: '',
       day: '',
     };
+
+  showAddTask: boolean = false
+  subscription!: Subscription
+
+  constructor(private uiService: UiService) {
+    this.subscription = this.uiService.onToggle()
+      .subscribe(v => (this.showAddTask = v))
+  }
 
   onSubmit() {
     this.errors.text = !this.forms.text ? 'Please add a task name' : ''

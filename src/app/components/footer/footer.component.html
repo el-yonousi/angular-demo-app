@@ -1,0 +1,20 @@
+<footer class="flex flex-wrap justify-between gap-4 h-full mt-10">
+    <div class="flex flex-col gap-4">
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="about">about</a></li>
+        </ul>
+    </div>
+    <div class="flex flex-col justify-between items-end gap-4">
+        <div class="flex justify-center items-center gap-1">
+            <span [textContent]="'Made with'"></span>
+            <span [textContent]="'♥'" class="text-red-600 text-3xl"></span>
+            <a
+                [href]="'https://elyonousi.casetrue.com'"
+                [target]="'_blank'"
+                [textContent]="'By Mohamed EL YONOUSI'">
+            </a>
+        </div>
+        <p [textContent]="'Copyright &copy; 2023'"></p>
+    </div>
+</footer>

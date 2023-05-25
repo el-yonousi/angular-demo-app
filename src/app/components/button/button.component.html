@@ -1,4 +1,8 @@
-<button [ngClass]="[color]" [ngStyle]="{'font-weight': bold}"
-    class="px-4 py-2 rounded hover:bg-teal-800 transition-all duration-700 ease-in-out" (click)="onButtonClick()">
-    {{ text }}
+<button
+    [ngClass]="[color]"
+    [ngStyle]="{'font-weight': bold}"
+    class="px-4 py-2 rounded transition-all duration-700 ease-in-out"
+    (click)="onButtonClick()"
+    [textContent]="text"
+    [ariaValueText]="text">
 </button>

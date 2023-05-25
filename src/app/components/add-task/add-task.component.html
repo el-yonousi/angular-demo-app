@@ -1,4 +1,8 @@
-<form class="flex flex-col gap-2 mb-6" (ngSubmit)="onSubmit()">
+
+<form
+    *ngIf="showAddTask"
+    class="flex flex-col gap-2 mt-4 transition-all duration-700 ease-in-out"
+    (ngSubmit)="onSubmit()">
     <div class="flex flex-col gap-1">
         <label class="font-medium" for="text">Task</label>
         <input class="caret-teal-500 rounded border border-slate-600 bg-transparent px-2 py-2 focus:outline-none"
@@ -18,4 +22,4 @@
     </div>
     <input class="cursor-pointer font-semibold rounded bg-teal-500 px-2 py-2 focus:outline-none "
         type="submit" value="Save Task">
-</form>
+</form>  
