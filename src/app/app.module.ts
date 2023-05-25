@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,8 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { ContainerComponent } from './components/container/container.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AuthComponent } from './components/auth/auth.component';
+import { AccountComponent } from './components/account/account.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ContainerComponent,
     AboutComponent,
     FooterComponent,
+    AuthComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
